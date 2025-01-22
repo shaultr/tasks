@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    font-size: 30px;
+    color: #4caf50;
+    border: 2px solid #ccc;
+    width: 100%;
+    position: relative;
+
+    span {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    input[type="checkbox"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+
+        &:checked {
+            background-color: #4caf50;
+            border-color: #4caf50;
+
+            &::after {
+                content: '✔';
+                font-size: 16px;
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    svg {
+        color: #ccc;
+    }
+}
+
+.completed {
+    color: #4caf4f77;
+}
+.menu {
+    position: absolute;
+    top: 100%;
+    left: -80;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    // div:hover{
+    //     background-color: #ccc;
+    // }
+}

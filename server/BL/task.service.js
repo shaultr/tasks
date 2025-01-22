@@ -1,4 +1,4 @@
-import { createTask } from "../DL/controllers/task.controller";
+import { createTask, readAllTasks } from "../DL/controllers/task.controller";
 
 export const createTaskService = async (task) => {
     console.log(task);
@@ -8,6 +8,11 @@ export const createTaskService = async (task) => {
         description: task.description,
     }
     const result = await createTask(taskSchema);
-    console.log('🎃🎊🎊\n',result)
+    return result;
+};
+
+export const readAllTasksService = async () => {
+  
+    const result = await readAllTasks();
     return result;
 };

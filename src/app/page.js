@@ -3,9 +3,9 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-            <Link href="/tasks">Create a New Task</Link>
-            <Link href="/todoList">todoList </Link>
+    <div className={styles.container}>
+            <Link href="/tasks">הוסף משימות</Link>
+            <Link href="/todoList">נהל משימות </Link>
             </div>
   );
 }

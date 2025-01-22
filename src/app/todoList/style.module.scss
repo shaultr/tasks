@@ -6,7 +6,21 @@ body {
     margin: 0;
 }
 .container {
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
     height: 200px;
-    background-color: lightblue;
+    font-size: 30px;
+
+}
+.lock{
+    background-color: #8888889d;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 22px;
 }

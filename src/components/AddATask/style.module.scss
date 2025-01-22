@@ -1,0 +1,26 @@
+.buttonAdd{
+
+    input{
+        width: 570px;
+        height: 30px;
+        border: none;
+        border-bottom: 2px solid #ccc;
+        outline: none;
+        padding: 5px;
+    font-size: 30px;
+    padding: 8px;
+    text-align: right;
+    
+}
+input:focus {
+    border-bottom-color: #4caf50;
+}
+input::placeholder {
+      font-size: 20px;
+    color: #8888889d; 
+    font-style: italic; 
+}
+.buttonAdd:hover{
+    // transform: scale(1.2);
+}
+    }
