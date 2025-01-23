@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.loading {
+    background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+    background-size: 200% 100%;
+    animation: loadingAnimation 3s infinite ease-in-out; /* שיניתי ל-3 שניות */
+    height: 60px;
+    width: 600px;
+    border-radius: 8px; /* פינות מעוגלות */
+}
+
+/* האנימציה להזזת הרקע */
+@keyframes loadingAnimation {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}

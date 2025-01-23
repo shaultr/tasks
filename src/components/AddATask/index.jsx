@@ -1,11 +1,19 @@
 "use client"
 import { MdAdd } from "react-icons/md";
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import styles from './style.module.scss'
 
 export default function AddATask({ getAllTasks }) {
+    const [hydrated, setHydrated] = useState(false);
     const [newTask, setNewTask] = useState('');
 
+    useEffect(() => {
+        setHydrated(true);
+    }, []);
+
+    if (!hydrated) {
+        return null; // מניעת רינדור עד לסיום ההידרציה
+    }
     const assANewTask = async () => {
         if (newTask === '') return
         const title = newTask;
