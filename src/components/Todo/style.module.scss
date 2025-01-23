@@ -52,19 +52,14 @@
 .completed {
     color: #4caf4f77;
 }
-.menu {
-    position: absolute;
-    top: 100%;
-    left: -80;
-    align-items: center;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+.update {
     display: flex;
-    flex-direction: column;
-    padding: 6px;
-    // div:hover{
-    //     background-color: #ccc;
-    // }
+    gap: 10px;
+    padding: 10px;
+    width: 70px;
+    svg {
+        cursor: pointer;
+
+    }
 }

@@ -9,13 +9,12 @@
 .loading {
     background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
     background-size: 200% 100%;
-    animation: loadingAnimation 3s infinite ease-in-out; /* שיניתי ל-3 שניות */
+    animation: loadingAnimation 3s infinite ease-in-out;
     height: 60px;
     width: 600px;
-    border-radius: 8px; /* פינות מעוגלות */
+    border-radius: 8px;
 }
 
-/* האנימציה להזזת הרקע */
 @keyframes loadingAnimation {
     0% {
         background-position: 200% 0;
